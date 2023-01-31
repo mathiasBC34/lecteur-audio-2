@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* debus controle la barre sons*/
+.barre_navlecteursons {
+    display: flex;
+    width: 20px;
+    height: 150px;
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+
+.barre_navlecteursons input {
+    width: 150px;
+    height: 20px;
+    margin: 0;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg);
+  
+}
+  /*fin controle la barre sons*/
+
+.jouejoue {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-image: url("../tp_js_lecteur_audio/image/DOOM.jpg"); */
+}
+
+/*controle la taille d'emplacement de detail, barre_navlecteur,bouttons,wawe*/
+.emballage {
+    width: 385px;
+    height: 361px;
+}
+
+/*controle les boutons*/
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*controle jouer, trouver_image, trouver_nom, trouver_artiste*/
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*controle l'image qui sera afficher*/
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid white;
+    background-size: cover;
+    background-position: center;
+}
+/*sert a rien pour l'instant*/
+.now-playing{
+    font-size: 1rem;
+}
+
+/*affiche la duré de la lecture de la musique*/
+.slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i,
+i.fa-redo,
+i.fa-step-backward,
+i.fa-play-circle,
+i.fa-step-forward,
+i.fa-stop-circle{
+    cursor: pointer;
+}

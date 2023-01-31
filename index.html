@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lala.css">
+    <link rel="shortcut icon" href="image/favicon" type="image/x-icon"><!--permet d'emporter des icons pour le lecteur de musique-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <title>lecteur audio</title>
+    
+</head>
+<body>
+
+    <div class="barre_navlecteursons">
+        <i class="fa fa-volume-up"></i>
+        <input type="range" max="100" min="1" value="99" class="volume_slider   " onchange="setVolume()">
+        <i class="fa fa-volume-down"></i>
+    </div>
+
+    <div class="jouejoue">
+        <div class="emballage">
+            <div class="details">
+                <div class="now-playing">joue → ou ←</div>
+                <div class="track-art"></div>
+                <div class="track-name">nom</div>
+                <div class="track-artist">trouver_artist</div>
+            </div>
+
+            <div class="slider_container">
+                <div class="current_time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>
+
+            <div class="buttons">
+                <div class="repeat-track" onclick="repeatTrack()">
+                    <i class="fa fa-redo fa-2x" title="repeat" style="transform: rotate;"></i>
+                </div>
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-4x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="traqueur-stop" onclick="randomtrack()">
+                    <i class="fas fa-stop-circle fa-2x" title="random"></i>
+                </div>
+            </div>
+
+            <div id="wawe">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
